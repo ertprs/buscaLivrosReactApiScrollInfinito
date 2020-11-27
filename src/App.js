@@ -1,5 +1,8 @@
 import React, { useState, useRef, useCallback } from 'react'
+
 import useBookSearch from './useBookSearch'
+
+import './App.css'
 
 export default function App() {
   const [query, setQuery] = useState('')
@@ -32,7 +35,7 @@ export default function App() {
 
   return (
     <>
-   <input type="text" value={query} onChange={handleSearch}></input>
+   <input placeholder="Digite o nome do livro..." type="text" value={query} onChange={handleSearch}></input>
    {books.map((book, index) => {
      if (books.length === index + 1) {
       return <div ref={lastBookElementRef} key={book}>{book}</div>
