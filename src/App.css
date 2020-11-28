@@ -1,14 +1,14 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 30px;
     box-sizing: border-box;
     background-color: #420142;
     color: #efefef;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 input {
-    margin: 25px;
+    margin: 25px 0 25px 0;
 }
